@@ -7,10 +7,10 @@ jobs:
       run:
         working-directory: ./01-first-action
     steps:
-      - name: Print greeting
-        run: echo "Hello World!"
       - name: Get code
         uses: actions/checkout@v3
+      - name: Print greeting
+        run: echo "Hello World!"
       - name: Print workspace content
         run: ls
       - name: Print goodbye
