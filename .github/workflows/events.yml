@@ -1,4 +1,4 @@
-name: Events Demo 1
+name: Events workflow
 on:
   pull_request:
     types:
