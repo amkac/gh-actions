@@ -1,4 +1,4 @@
-name: node action sample
+name: Node workflow sample
 on:
   workflow_dispatch:
   push:
