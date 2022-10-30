@@ -9,6 +9,8 @@ jobs:
     steps:
       - name: Print greeting
         run: echo "Hello World!"
+      - name: Get code
+        uses: actions/checkout@v3
       - name: Print workspace content
         run: ls
       - name: Print goodbye
