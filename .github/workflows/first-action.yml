@@ -1,11 +1,11 @@
 name: First Workflow
-on:
-  workflow_dispatch:
-    paths:
-      - '01-first-action/**'
+on: workflow_dispatch
 jobs:
   first-job:
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ./01-first-action
     steps:
       - name: Print greeting
         run: echo "Hello World!"
