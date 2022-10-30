@@ -1,0 +1,17 @@
+name: First Workflow
+on: workflow_dispatch
+jobs:
+  first-job:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ./01-first-action
+    steps:
+      - name: Get code
+        uses: actions/checkout@v3
+      - name: Print greeting
+        run: echo "Hello World!"
+      - name: Print workspace content
+        run: ls
+      - name: Print goodbye
+        run: echo "Done - bye!"
