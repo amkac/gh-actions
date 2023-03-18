@@ -47,7 +47,7 @@ jobs:
       - name: Test code
         run: npm run test
         id: run-tests
-        continue-on-error: true
+        # continue-on-error: true
       - name: Upload test report
         if: steps.run-tests.outcome == 'failure'
         uses: actions/upload-artifact@v3
