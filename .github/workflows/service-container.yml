@@ -13,8 +13,10 @@ env:
   MONGODB_DB_NAME: gha-demo
 jobs:
   test:
-    environment: testing
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ./05-mongo-app
     # container:
     #   image: node:16
     env:
